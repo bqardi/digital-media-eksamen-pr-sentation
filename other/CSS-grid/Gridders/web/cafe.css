@@ -1,0 +1,438 @@
+/**********************************************************************************/
+/* Resets */
+/**********************************************************************************/
+* {
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background: linear-gradient(to right, white 0%, #dfe4ea 20%, #dfe4ea 80%, white 100%);
+    font-family: 'Heebo', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/**********************************************************************************/
+/* Global */
+/**********************************************************************************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.knap {
+    text-transform: uppercase;
+}
+
+a {
+    color: #018383;
+    text-decoration: none;
+}
+
+.page {
+    max-width: 72rem;
+    margin: 0px auto;
+}
+
+.menu-icon {
+    width: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 4px;
+    align-items: center;
+    margin: 18px 0;
+    grid-template-columns: repeat(21, 1fr);
+    z-index: 5;
+}
+
+.box-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-span-1 {
+    grid-column: auto / span 1;
+}
+
+.grid-span-2 {
+    grid-column: auto / span 2;
+}
+
+.grid-span-3 {
+    grid-column: auto / span 3;
+}
+
+.grid-span-4 {
+    grid-column: auto / span 4;
+}
+
+.grid-span-5 {
+    grid-column: auto / span 5;
+}
+
+.grid-span-6 {
+    grid-column: auto / span 6;
+}
+
+.grid-span-7 {
+    grid-column: auto / span 7;
+}
+
+.grid-span-8 {
+    grid-column: auto / span 8;
+}
+
+.grid-span-11 {
+    grid-column: auto / span 11;
+}
+
+.grid-span-16 {
+    grid-column: auto / span 16;
+}
+
+.grid-span-row-2 {
+    grid-row: auto / span 2;
+}
+
+.no-gap {
+    position: relative;
+}
+
+.no-gap::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 20px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.box {
+    grid-gap: 20px;
+}
+
+.box div {
+    width: 100%;
+    height: 100%;
+}
+
+.box div.text {
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.box div.img {
+    overflow: hidden;
+    padding: 0;
+}
+
+.box div.img-cat img {
+    max-width: initial;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.box div.half-size {
+    max-width: 50%;
+}
+
+.knap {
+    background: #fff;
+    padding: 14px 20px;
+    font-weight: bold;
+    z-index: 6;
+}
+
+.top-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+#top-slider-image {
+    background-size: cover;
+    height: 621px;
+    width: 1152px;
+    transition: opacity 2s;
+}
+
+.top-slider-textbox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 160px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* .menu-sticky{
+    position: sticky;
+    top: 0;
+} */
+.box div.sub-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    max-height: 200px;
+    margin-bottom: 20px;
+}
+
+.box div.sub-img {
+    overflow: hidden;
+    max-height: 200px;
+}
+
+.box div.sub-img img {
+    object-fit: cover;
+    min-height: 200px;
+}
+
+/**********************************************************************************/
+/* menu */
+/**********************************************************************************/
+.menu{
+    grid-column: auto / span 5;
+}
+.menu-height-control{
+    padding-bottom: 180px;
+}
+.menu-grid{
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: repeat(5, 1fr);
+}
+.button{
+    grid-column: 2 / span 4;
+}
+.button > a,
+.button .social{
+    position: relative;
+    display: block;
+    background: #fff;
+    padding: 13px 18px 13px 0;
+    font-weight: bold;
+}
+.button > a::before,
+.button .social::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 20px;
+    height: 100%;
+    background: #fff;
+}
+.button > a:hover{
+    background: linear-gradient(to right,#d9dfe5 0%,#f7f7f7 74%);
+}
+.button > a:hover::before{
+    background: linear-gradient(to right,#e5e7e9 0%,#d9dfe5 74%);
+}
+.highlight > a{
+    background: linear-gradient(to right,#c7e3e5 0%,#009098 100%);
+    color: #fff;
+}
+.highlight > a::before{
+    background: linear-gradient(to right,#e2edee 0%,#c7e3e5 100%);
+}
+.highlight > a:hover{
+    background:#62b6bb;
+}
+.highlight > a:hover::before{
+    background:#62b6bb;
+}
+.button .social{
+    padding: 6px 0 0;
+}
+.button .lang{
+    padding: 14px 0 0;
+    text-align: center;
+    background-color: #fff;
+}
+.button .social > a{
+    color: #808f9d;
+    font-size: 1.9em;
+    padding-left: 2px;
+    padding-right: 8px;
+}
+.button-grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 4px;
+    
+}
+
+
+/**********************************************************************************/
+/* Cafe */
+/**********************************************************************************/
+/*---grid template---**************************************/
+.wrapper-grid-cafe {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 65px;
+    margin-top: 2%;
+}
+
+.cafe-main-indhold-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: 20px;
+}
+.cafe-regler-grid{
+    grid-column: auto / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-self: center;
+    grid-row-gap: 18px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+/*---style---**************************************/
+.cafe-indhold-grid-fuld-box {
+    grid-column: auto / span 12;
+    background: #fff;
+    margin-bottom: -20px;
+}
+
+.cafe-indhold-grid-fuld-box-txt {
+    grid-column: auto / span 10;
+    background: #fff;
+    padding: 0 20px;
+}
+
+.cafe-indhold-grid-fuld-box-txt-p {
+    margin-bottom: 50px;
+}
+
+.cafe-indhold-grid-fuld-box-højre-margin {
+    grid-column: auto / span 2;
+    background: #fff;
+}
+
+.cafe-indhold-grid-fuld-box-reklame {
+    grid-column: auto / span 12;
+    /*---starter grid---*/
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+
+.cafe-reklame-grid-venstre {
+    grid-column: auto / span 6;
+    background: #fff;
+    padding-left: 20px;
+    /*---starter grid---*/
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.cafe-reklame-grid-højre {
+    grid-column: auto / span 6;
+    background: #fff;
+    padding-left: 20px;
+    /*---starter grid---*/
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.cafe-reklame-grid-innergrid{
+    grid-column: auto / span 3;
+}
+.cafe-reklame-grid-innergrid img{
+    margin-bottom: -4%;
+}
+
+.cafe-indhold-grid-fuld-box-txt-undertitle {
+    margin: 2px auto;
+}
+.cafe-info-venstre{
+    grid-column: auto / span 6;
+    background: #009098;
+}
+.cafe-info-højre{
+    grid-column: auto / span 6;
+    background: #95c3c5;
+}
+
+/*---regler style---******************/
+.cafe-regler-icon{
+    grid-column: auto / span 2;
+    background: #fff;
+}
+.cafe-regler-indhold{
+    grid-column: auto / span 10;
+}
+.cafe-regler-indhold-border{
+    border: 5px solid #dfe4ea;
+    border-width: 0px 0px 5px 0px;
+}
+.cafe-regler-icon-img{
+    display: block;
+    margin: 15px auto 5px auto;
+}
+
+
+/**********************************************************************************/
+/* Footer */
+/**********************************************************************************/
+.footer-grid{    
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    background-color: #fff;
+    padding: 20px 0;
+}
+.footer-grid #footer-name li{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.footer-grid address{
+    font-style: normal;
+    text-transform: uppercase;
+}
+.footer-grid address a{
+    color: #000;
+}
+.footer-grid ul{    
+    margin: 0;
+    padding-inline-start: 20px;
+}
+.footer-grid ul li{    
+    list-style-type: none;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 25px;
+}
+footer{
+    margin-bottom: 20px;
+}
+
+
+/* .test-hover{
+    background: url(../billeder/BØRNEHUS.jpg) no-repeat center;
+    background-size: cover;
+    height: 621px;
+    width: 1152px;
+    transition: 1500ms
+}
+.test-hover:hover{
+    background: url(../billeder/GENNEM_TIDEN.jpg) no-repeat center;
+    background-size: cover;
+    transition: 1500ms;
+    opacity: ;
+} */

@@ -1,0 +1,32 @@
+.sub-form-2{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.sub-form-row{
+    grid-template-rows: repeat(2, 1fr);
+}
+input[type="radio"]{
+    display:none;
+}
+.choice-label{
+    display: none
+}
+.form-label{
+    display: block;
+}
+.form-label:before{
+    display:inline-block;
+    content:url(../billeder/label-not-checked.PNG);
+    vertical-align: middle;
+    margin-right: 10px;
+}
+input[type="radio"]:checked ~ .form-label:before{
+    content:url(../billeder/label-checked.PNG);
+    margin-right: 10px;
+}
+.field-name{
+    width: 230px;
+    padding: 5px;
+}

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="bq-style.css">
+    <link rel="stylesheet" href="code_style.css">
+    <link rel="stylesheet" href="basic-style.css">
+    <script src="index.js"></script>
+    <script src="example.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Design - Kode struktur</title>
+</head>
+
+<body>
+    <div id="modal-background" class="modal-background" style="display: none;">
+        <div id="modal-box" class="modal-box">
+            <h2 id="modal-title">Title</h2>
+            <p id="modal-content">
+                Content
+            </p>
+            <a href="#" id="close" class="close" title="Luk vindue">x</a>
+        </div>
+    </div>
+    <div class="to-top">
+        <a href="#"><span class="arrow-up"></span></a>
+    </div>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo_small.png" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="code-design.html" class="active">Kode design</a></li>
+                <li><a href="video-app.html">Video App</a></li>
+                <li><a href="stia.html">STIA</a></li>
+                <li><a href="hitman7.html">Hitman 7</a></li>
+                <li><a href="other.html">Andre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="side-bar">
+        <aside>
+            <h2>Hjælpeværktøjer</h2>
+            <h3>Elementer</h3>
+            <div class="row-wrapper">
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail" src="images/farvehjul.jpg" title="Farvehjul" alt="Farvehjul">
+                    </a>
+                </div>
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail" src="images/komplementær-kontraster.jpg" title="Komplementær kontraster" alt="Komplementær kontraster">
+                    </a>
+                </div>
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail" src="images/farvers-betydning.jpg" title="Farvers betydning" alt="Farvers betydning">
+                    </a>
+                </div>
+            </div>
+            <div class="row-wrapper">
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail" src="images/times-new-roman.jpg" title="Serif" alt="Typografi - Serif">
+                    </a>
+                </div>
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail" src="images/roboto.jpg" title="Sans Serif" alt="Typografi - Sans Serif">
+                    </a>
+                </div>
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail" src="images/cutive-mono.jpg" title="Monospace" alt="Typografi - Monospace">
+                    </a>
+                </div>
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail" src="images/lucida-handwriting.jpg" title="Håndskrift" alt="Typografi - Håndskrift">
+                    </a>
+                </div>
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail" src="images/fredericka-the-great.jpg" title="Fantasy" alt="Typografi - Fantasy/display">
+                    </a>
+                </div>
+            </div>
+            <div class="row-wrapper">
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail-half" src="images/white-space.jpg" title="White space" alt="White space (negativ luft)">
+                    </a>
+                </div>
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail" src="images/linjer.jpg" title="Linjer" alt="Linjer">
+                    </a>
+                </div>
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail" src="images/grupper.jpg" title="Former og figurer" alt="Former og figurer">
+                    </a>
+                </div>
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail" src="images/andre_elementer.jpg" title="Proportion, værdi, tekstur" alt="Proportion, værdi, tekstur">
+                    </a>
+                </div>
+            </div>
+            <h3>Principper</h3>
+            <div class="row-wrapper">
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail-half" src="images/hierarki.jpg" title="Hierarki" alt="Hierarki">
+                    </a>
+                </div>
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail-half" src="images/kontrast.jpg" title="Kontrast" alt="Kontrast">
+                    </a>
+                </div>
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail" src="images/rytme.jpg" title="Rytme" alt="Rytme">
+                    </a>
+                </div>
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail-half" src="images/enkelthed.jpg" title="Enkelthed" alt="Enkelthed (simplicity)">
+                    </a>
+                </div>
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail-half" src="images/fleksibilitet.jpg" title="Fleksibilitet" alt="Fleksibilitet vs. brugervenlighed">
+                    </a>
+                </div>
+            </div>
+            <div class="row-wrapper">
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail" src="images/grids.jpg" title="Grids" alt="Grids">
+                    </a>
+                </div>
+            </div>
+            <h3>Gestalt</h3>
+            <div class="row-wrapper">
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail" src="images/ensartethed.jpg" title="Lighed" alt="Lighed (genkendelighed)">
+                    </a>
+                </div>
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail" src="images/lukkethed.jpg" title="Lukkethed" alt="Lukkethed">
+                    </a>
+                </div>
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail" src="images/figurdannelse.jpg" title="Figur og grund" alt="Figur og grund">
+                    </a>
+                </div>
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail" src="images/nærhed.jpg" title="Nærhed" alt="Nærhed">
+                    </a>
+                </div>
+                <div class="thumb-container">
+                    <a href="#" class="modal">
+                        <img class="thumbnail" src="images/forbundethed.jpg" title="Forbundethed" alt="Forbundethed">
+                    </a>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <div class="main-container">
+        <main>
+            <h1>Design af kode generelt</h1>
+            <div class="project-area">
+                <section>
+                    <h2>Design i kode</h2>
+                    <ul class="ul-normal">
+                        <li>Indrykning af kodelinjer (TAB) skaber <strong><a href="#" class="modal">hierarki<img class="thumbnail-hide" src="images/hierarki.jpg" title="Hierarki" alt="Hierarki"></a></strong>, som får de forskellige
+                            kodelinjer til at stå på <strong><a href="#" class="modal">linje<img class="thumbnail-hide" src="images/linjer.jpg" title="Linjer" alt="Linjer"></a></strong> (lodret).
+                            Gør det nemmere at se, hvad der hører sammen og skaber samtidig god struktur.</li>
+                        <li>Scope kan direkte sammenlignes med <strong><a href="#" class="modal">loven om lukkethed<img class="thumbnail-hide" src="images/lukkethed.jpg" title="Lukkethed" alt="Lukkethed"></a></strong> fra gestaltlovene.
+                            Alt, hvad der står mellem tegnene, <strong>{</strong> og <strong>}</strong> er pr. definition et scope, og tegnene kan betragtes
+                            som en "ramme" omkring, hvad der nu står indeni.
+                            Dette indhold betragtes derfor naturligt som hørende sammen.</li>
+                        <li><strong><a href="#" class="modal">White space<img class="thumbnail-hide" src="images/white-space.jpg" title="White space" alt="White space (negativ luft)"></a></strong> (eller negativt rum) kan bruges til at adskille kodelinjer, så man grupperer
+                            disse kodelinjer og dermed skaber, hvad der ifølge gestaltlovene kaldes
+                            <strong><a href="#" class="modal">loven om nærhed<img class="thumbnail-hide" src="images/nærhed.jpg" title="Nærhed" alt="Nærhed"></a></strong>.</li>
+                        <li>Gruppering af kodetyper er også med til at skabe <strong><a href="#" class="modal">lighed<img class="thumbnail-hide" src="images/ensartethed.jpg" title="Lighed" alt="Lighed (genkendelighed)"></a></strong> (f.eks. ved at
+                            samle variabler ét sted og funktioner et andet sted). <strong><a href="#" class="modal">Loven om lighed<img class="thumbnail-hide" src="images/ensartethed.jpg" title="Lighed" alt="Lighed (genkendelighed)"></a></strong> brugt
+                            i kode er med til at skabe struktur, som gør det hele nemmere at overskue.</li>
+                        <li>Kommentarer bruges i programmering normalt til kort at forklare, hvad et stykke kode gør,
+                            eller hvad en variabel bruges til, men <u>kan også</u> bruges til at skabe
+                            <strong><a href="#" class="modal">lukkethed<img class="thumbnail-hide" src="images/lukkethed.jpg" title="Lukkethed" alt="Lukkethed"></a></strong>
+                            ved f.eks at "indkapsle" noget kode i kommentarer - I VSCode har man endda indkorporeret en forholdsvis ny feature kaldet
+                            <strong><a href="#" class="modal">regions<img class="thumbnail-hide" src="images/code-regions.jpg" title="Kode regioner" alt="Kode regioner i VSCode"></a></strong>:<br>
+                            <span class="comment comment-text">//#region VALGFRI_TITEL</span> og
+                            <span class="comment comment-text">//#endregion VALGFRI_TITEL</span>,
+                            hvor man kan kollapse alt indhold mellem disse to kommentarer, givet at de har samme titel.</li>
+                    </ul>
+                    <h2 class="prototype">Prototype:</h2>
+                    <div class="code-container">
+                        <section class="code">
+                            <pre><code><h2>JavaScript - Funktionelt eksempel</h2>
+<p><span class="comment">//Deklaration af variabler</span>
+<span class="reserved">let</span> <span class="variable">qs</span> = <span class="variable">document</span>.<span class="variable">querySelector</span>.<span class="function">bind</span>(<span class="variable">document</span>);
+
+<span class="reserved">let</span> <span class="variable">btn</span> = <span class="function">qs</span>(<span class="string">"#button"</span>);
+
+<span class="comment">//Initialisering</span>
+<span class="variable">btn</span>.<span class="function">addEventListener</span>(<span class="string">"click"</span>, <span class="reserved">function</span>(){
+    <span class="function">buttonClick</span>(<span class="reserved">this</span>);
+})
+
+<span class="comment">//Funktioner</span>
+<span class="reserved">function</span> <span class="function">buttonClick</span>(<span class="variable">element</span>){
+    <span class="execution">if</span> (<span class="function">getColor</span>(<span class="variable">element</span>) == <span class="string">"rgb(255, 0, 0)"</span>) {
+        <span class="function">setColor</span>(<span class="variable">element</span>, <span class="string">"rgb(0, 0, 255)"</span>);
+    } <span class="execution">else</span> {
+        <span class="function">setColor</span>(<span class="variable">element</span>, <span class="string">"rgb(255, 0, 0)"</span>);
+    }
+}
+<span class="reserved">function</span> <span class="function">getColor</span>(<span class="variable">element</span>){
+    <span class="execution">return</span> <span class="variable">element</span>.<span class="variable">style</span>.<span class="variable">backgroundColor</span>;
+}
+<span class="reserved">function</span> <span class="function">setColor</span>(<span class="variable">element</span>, <span class="variable">color</span>){
+    <span class="variable">element</span>.<span class="variable">style</span>.<span class="variable">backgroundColor</span> = <span class="variable">color</span>;
+}</p>
+</code></pre>
+                        </section>
+                    </div>
+                    <section class="code">
+                        <pre><code><h2>JavaScript - Eksekvérbart eksempel</h2>
+<p><span class="comment">//Simpel JavaScript kode der får knappen til at skifte farve ved hvert klik</span></p>
+
+    <button id="button" style="border:none;background-color:rgb(255,0,0);padding:18px 30px;color:#fff;cursor:pointer;">Tryk på mig! Please...</button>
+
+</code></pre>
+                    </section>
+                </section>
+                <div class="pane-area">
+                    <ul class="panes">
+                        <li id="pane0" class="pane"><a href="#">Idé</a></li>
+                        <li id="pane1" class="pane"><a href="#">Pseudo mockup</a></li>
+                        <li id="pane2" class="pane"><a href="#">Site JS kode</a></li>
+                        <li id="pane3" class="pane"><a href="#">Site JS minified</a></li>
+                    </ul>
+                    <section id="content0" class="content">
+                        <h2 class="grid-span">Idé, brainstorm</h2>
+                        <p class="grid-span">
+                            Eksempel på brug af design i kode.<br>
+                            Brug af whitespace.<br>
+                            Brug af lukkethed.<br>
+                            Brug af nærhed.<br>
+                            Brug af Linjer.<br>
+                            Eksempel (pseudo kode) der viser brugen af whitespace, lukkethed, nærhed og linjer.<br>
+                            Evt. et simpelt fungerende eksempel. F.eks. en knap der får et element til at skifte
+                            tilstand.
+                        </p>
+                    </section>
+                    <section id="content1" class="content">
+                        <h2 class="grid-span">Pseudo mockup</h2>
+                        <div class="code-container grid-span">
+                            <section class="code">
+                                <pre><code><h2>JavaScript - pseudo code</h2>
+<p><span class="comment">//Objekter</span>
+<span class="reserved">class</span> <span class="class">SomeObject</span>{
+    <span class="reserved">constructor</span>(<span class="variable">something</span>, <span class="variable">else</span>){
+        <span class="reserved">this</span>.<span class="variable">something</span> = <span class="variable">something</span>;
+        <span class="reserved">this</span>.<span class="variable">else</span> = <span class="variable">else</span>;
+    }
+}
+
+<span class="comment">//Efter load af DOM (Document Object Model)</span>
+<span class="variable">document</span>.<span class="function">addEventListener</span>(<span class="string">"DOMContentLoaded"</span>, <span class="reserved">function</span>(){
+    <span class="comment">//Variabler</span>
+    <span class="reserved">let</span> <span class="variable">someVariable</span>;
+    <span class="reserved">let</span> <span class="variable">someOtherVariable</span>;
+    <span class="reserved">let</span> <span class="variable">aThirdVariable</span>;
+
+    <span class="comment">//Initialisering</span>
+    <span class="variable">window</span>.<span class="function">addEventListener</span>(<span class="string">"click"</span>, <span class="reserved">function</span>(<span class="variable">e</span>){
+        <span class="variable">execute</span>.<span class="variable">some</span>.<span class="variable">code</span>;
+    })
+
+    <span class="comment">//Funktioner</span>
+    <span class="reserved">function</span> <span class="function">someFunction</span>(){
+        <span class="variable">execute</span>.<span class="variable">some</span>.<span class="variable">code</span>;
+    }
+    <span class="reserved">function</span> <span class="function">anotherFunction</span>(){
+        <span class="variable">execute</span>.<span class="variable">some</span>.<span class="variable">code</span>;
+    }
+    <span class="reserved">function</span> <span class="function">someObjectHandling</span>(){
+        <span class="reserved">let</span> <span class="variable">someObj</span> = <span class="reserved">new</span> <span class="class">SomeObject</span>(<span class="variable">oneThing</span>, <span class="variable">otherThing</span>)
+        <span class="variable">execute</span>.<span class="variable">some</span>.<span class="variable">code</span>;
+    }
+})</p>
+</code></pre>
+                            </section>
+                        </div>
+                    </section>
+                    <section id="content2" class="content">
+                        <h2 class="grid-span">Præsentationens JavaScript kode</h2>
+                        <div class="code-container grid-span">
+                            <section class="code">
+                                <pre><code><h2>JavaScript - Præsentationskode</h2>
+<p><span class="reserved">class</span> <span class="class">PaneObj</span>{
+    <span class="reserved">constructor</span>(<span class="variable">pane</span>, <span class="variable">content</span>){
+        <span class="reserved">this</span>.<span class="variable">pane</span> = <span class="variable">pane</span>;
+        <span class="reserved">this</span>.<span class="variable">content</span> = <span class="variable">content</span>;
+    }
+}
+
+<span class="variable">document</span>.<span class="function">addEventListener</span>(<span class="string">"DOMContentLoaded"</span>, <span class="reserved">function</span>(){
+    <span class="comment">//Bindings</span>
+    <span class="reserved">let</span> <span class="variable">qs</span> = <span class="variable">document</span>.<span class="variable">querySelector</span>.<span class="function">bind</span>(<span class="variable">document</span>);
+    <span class="reserved">let</span> <span class="variable">qsa</span> = <span class="variable">document</span>.<span class="variable">querySelectorAll</span>.<span class="function">bind</span>(<span class="variable">document</span>);
+    
+    <span class="comment">//Panes</span>
+    <span class="reserved">let</span> <span class="variable">paneElements</span> = <span class="function">qsa</span>(<span class="string">".pane"</span>);
+    <span class="reserved">let</span> <span class="variable">panes</span> = [];
+
+    <span class="execution">for</span> (<span class="reserved">let</span> <span class="variable">i</span> = <span class="value">0</span>; <span class="variable">i</span> &lt; <span class="variable">paneElements</span>.<span class="variable">length</span>; <span class="variable">i</span>++) {
+        <span class="function">addPane</span>(<span class="variable">i</span>);
+    }
+
+    <span class="function">clearPanes</span>();
+    <span class="function">selectPane</span>(<span class="variable">panes</span>[<span class="value">0</span>]);
+
+    <span class="reserved">function</span> <span class="function">addPane</span>(<span class="variable">id</span>){
+        <span class="reserved">let</span> <span class="variable">newPane</span> = <span class="reserved">new</span> <span class="class">PaneObj</span>(<span class="function">qs</span>(<span class="string">"#pane"</span> + <span class="variable">id</span>), <span class="function">qs</span>(<span class="string">"#content"</span> + <span class="variable">id</span>));
+        <span class="variable">newPane</span>.<span class="variable">pane</span>.<span class="function">addEventListener</span>(<span class="string">"click"</span>, <span class="reserved">function</span>(<span class="variable">e</span>){            
+            <span class="variable">e</span>.<span class="function">preventDefault</span>();
+            <span class="execution">if</span> (<span class="variable">newPane</span>.<span class="variable">pane</span>.<span class="variable">classList</span>.<span class="variable">value</span> == <span class="string">"pane disabled"</span>) {
+                <span class="execution">return</span>;
+            }
+            <span class="function">clearPanes</span>();
+            <span class="function">selectPane</span>(<span class="variable">newPane</span>);
+        })
+        <span class="variable">panes</span>.<span class="function">push</span>(<span class="variable">newPane</span>);
+    }
+    <span class="reserved">function</span> <span class="function">clearPanes</span>(){
+        <span class="variable">panes</span>.<span class="function">forEach</span>(<span class="variable">pane</span> => {
+            <span class="execution">if</span> (<span class="variable">pane</span>.<span class="variable">pane</span>.<span class="variable">classList</span>.<span class="variable">value</span> != <span class="string">"pane disabled"</span>) {
+                <span class="execution">if</span> (<span class="variable">pane</span>.<span class="variable">content</span>) {                    
+                    <span class="variable">pane</span>.<span class="variable">pane</span>.<span class="variable">classList</span>.<span class="variable">value</span> = <span class="string">"pane"</span>;
+                    <span class="variable">pane</span>.<span class="variable">content</span>.<span class="variable">classList</span>.<span class="variable">value</span> = <span class="string">"content"</span>;
+                }<span class="execution">else</span>{
+                    <span class="variable">pane</span>.<span class="variable">pane</span>.<span class="variable">classList</span>.<span class="variable">value</span> = <span class="string">"pane disabled"</span>;
+                }
+            }
+        });
+    }
+    <span class="reserved">function</span> <span class="function">selectPane</span>(<span class="variable">pane</span>){
+        <span class="variable">pane</span>.<span class="variable">pane</span>.<span class="variable">classList</span>.<span class="variable">value</span> = <span class="string">"pane active"</span>;
+        <span class="variable">pane</span>.<span class="variable">content</span>.<span class="variable">classList</span>.<span class="variable">value</span> = <span class="string">"content active"</span>;
+    }
+
+    <span class="comment">//Image popup</span>
+    <span class="reserved">let</span> <span class="variable">modals</span> = <span class="function">qsa</span>(<span class="string">".modal"</span>);
+    <span class="reserved">let</span> <span class="variable">modalBackground</span> = <span class="function">qs</span>(<span class="string">"#modal-background"</span>);
+    <span class="reserved">let</span> <span class="variable">modalTitle</span> = <span class="function">qs</span>(<span class="string">"#modal-title"</span>);
+    <span class="reserved">let</span> <span class="variable">modalContent</span> = <span class="function">qs</span>(<span class="string">"#modal-content"</span>);
+    <span class="reserved">let</span> <span class="variable">modalClose</span> = <span class="function">qs</span>(<span class="string">"#close"</span>);
+
+    [<span class="variable">modalClose</span>, <span class="variable">modalBackground</span>].<span class="function">forEach</span>(<span class="variable">element</span> => {
+        <span class="variable">element</span>.<span class="function">addEventListener</span>(<span class="string">"click"</span>, <span class="reserved">function</span>(<span class="variable">e</span>){
+            <span class="variable">e</span>.<span class="function">preventDefault</span>();
+            <span class="variable">modalBackground</span>.<span class="variable">style</span>.<span class="variable">display</span> = <span class="string">"none"</span>;
+        })
+    })
+    <span class="variable">window</span>.<span class="function">addEventListener</span>(<span class="string">"keydown"</span>, <span class="reserved">function</span>(<span class="variable">e</span>){
+        <span class="execution">if</span> (<span class="variable">e</span>.<span class="variable">keyCode</span> == <span class="value">27</span>) {
+            <span class="variable">modalBackground</span>.<span class="variable">style</span>.<span class="variable">display</span> = <span class="string">"none"</span>;
+        }
+    })    
+    <span class="variable">modals</span>.<span class="function">forEach</span>(<span class="reserved">function</span>(<span class="variable">modal</span>){
+        <span class="variable">modal</span>.<span class="function">addEventListener</span>(<span class="string">"click"</span>, <span class="reserved">function</span>(<span class="variable">e</span>){
+            <span class="variable">e</span>.<span class="function">preventDefault</span>();
+            <span class="reserved">let</span> <span class="variable">modalImg</span> = <span class="reserved">this</span>.<span class="function">querySelector</span>(<span class="string">"img"</span>);
+            <span class="variable">modalBackground</span>.<span class="variable">style</span>.<span class="variable">display</span> = <span class="string">"initial"</span>;
+            <span class="variable">modalTitle</span>.<span class="variable">textContent</span> = <span class="variable">modalImg</span>.<span class="variable">alt</span>;
+            <span class="variable">modalContent</span>.<span class="variable">innerHTML</span> = <span class="variable">modalImg</span>.<span class="variable">outerHTML</span>;
+        })
+    })
+})</p>
+</code></pre>
+                            </section>
+                        </div>
+                    </section>
+                    <section id="content3" class="content">
+                        <h2 class="grid-span">Minified JavaScript kode</h2>
+                        <p class="grid-span">
+                            Det er en god idé at minify sin kode, når det er tid til at launche sit færdige produkt.
+                            Det gør filen mindre og skaber derved mindre "indlæsningsomkostninger".<br>
+                            Ved at minify koden fjerner man i princippet alle design elementer.
+                        </p>
+                        <div class="code-container grid-span">
+                            <section class="code">
+<pre><code><h2>JavaScript - Minified</h2>
+<p>class PaneObj{constructor(e,n)
+{this.pane=e,this.content=n}}document.addEventListener("DOMContentLoaded",function(){function e(e){let
+l=new PaneObj(a("#pane"+e),a("#content"+e));l.pane.addEventListener("click",function(e)
+{e.preventDefault(),"pane disabled"!=l.pane.classList.value&&(n(),t(l))}),o.push(l)}function n()
+{o.forEach(e=>{"pane disabled"!=e.pane.classList.value&&(e.content?
+(e.pane.classList.value="pane",e.content.classList.value="content"):e.pane.classList.value="pane
+disabled")})}function t(e){e.pane.classList.value="pane active",e.content.classList.value="content
+active"}let a=document.querySelector.bind(document),l=document.querySelectorAll.bind(document),
+c=l(".pane"),o=[];for(let n=0;n&lt;c.length;n++)e(n);n(),t(o[0]);let i=l(".modal"),s=a("#modal-background"),
+d=a("#modal-title"),u=a("#modal-content"),r=a("#close");[r,s].forEach(e=>{e.addEventListener("click",
+function(e){e.preventDefault(),s.style.display="none"})}),window.addEventListener("keydown",function(e)
+{27==e.keyCode&&(s.style.display="none")}),i.forEach(function(e){e.addEventListener("click",function(e)
+{e.preventDefault();let n=this.querySelector("img");s.style.display="initial",d.textContent=n.alt,
+u.innerHTML=n.outerHTML})})});</p>
+</code></pre>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="continue">
+        <div class="back">
+            <a href="index.html">Tilbage</a>
+        </div>
+        <div class="forward">
+            <a href="video-app.html">Videre</a>
+        </div>
+    </div>
+    <footer>
+        <small class="signature">&copy;&nbsp;<span class="signature-name">Sune Seifert</span>, 2019 - <a href="styleguide.pdf" target="_blank">Styleguide til dette site</a></small>
+    </footer>
+</body>
+
+</html>

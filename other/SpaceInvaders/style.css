@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    font-family: 'VT323', monospace;
+}
+
+#game-parent{
+    display: block;
+    max-width: 900px;
+    margin: 20px auto 8px;
+    box-shadow: 0 0 20px #aaaaaa;
+}
+#game-parent .game-board{
+    height: 600px;
+}
+
+.menu-wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#title{
+    padding-top: 120px;
+    font-size: 64px;
+    color: rgb(65, 126, 240);
+}
+.ui{
+    padding-top: 240px;
+    color: rgb(14, 27, 51);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.explanation{
+    width: 100%;
+    text-align: center;
+}
+.explanation .bullet{
+    margin: 0 12px;
+}
+
+.menu-buttons{
+    width: 200px;
+    margin: 0 auto;
+}
+.menu-buttons .btn{
+    width: 200px;
+    height: 40px;
+    margin: 10px 0;
+    line-height: 40px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+.menu-buttons .btn .upgrade-cost-text{
+    position: absolute;
+    margin-left: -200px;
+    color: #aaaaaa;
+}
+.menu-buttons .btn .upgrade-amount-text{
+    position: absolute;
+    margin-left: 70px;
+    color: #aaaaaa;
+}
+.menu-buttons .btn:hover > .upgrade-cost-text,
+.menu-buttons .btn:hover > .upgrade-amount-text{
+    color: darkkhaki;
+}

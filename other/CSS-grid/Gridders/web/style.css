@@ -1,0 +1,147 @@
+/**********************************************************************************/
+/* Resets */
+/**********************************************************************************/
+* {
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+
+}
+
+body {
+    background: linear-gradient(to right, white 0%, #dfe4ea 20%, #dfe4ea 80%, white 100%);
+    font-family: 'Heebo', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/**********************************************************************************/
+/* Global-------header */
+/**********************************************************************************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.knap {
+    text-transform: uppercase;
+}
+
+.page {
+    max-width: 72rem;
+    margin: 0px auto;
+}
+
+.knap {
+    background: #fff;
+    padding: 14px 20px;
+}
+
+.header-grid {
+    grid-template-columns: 9fr 5fr 1fr 4fr 1fr;
+
+}
+
+/**********************************************************************************/
+/* Global------slider*/
+/**********************************************************************************/
+.top-slider {
+    height: 621px;
+    width: 1152px;
+    overflow: hidden;
+}
+
+#top-slider-image {
+    background-size: cover;
+    height: 621px;
+    width: 1152px;
+    transition: opacity 2s;
+}
+
+/**********************************************************************************/
+/* Global------grid-template*/
+/**********************************************************************************/
+.wrapper-grid {
+    display: grid;
+    grid-gap: 4px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.wrapper-grid1 {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 65px;
+    margin-top: 2%;
+}
+
+/**********************************************************************************/
+/* Global------main*/
+/**********************************************************************************/
+.indhold {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+
+.menue-sticky {
+    background: red;
+}
+.indhold-box{
+    background: #fff;
+}
+
+
+
+
+
+/* box 1*/
+/**********************************************************************************/
+/* .klubkort-gave{
+    padding: 0 15px;
+    background-color: #fff;
+}
+
+.klubkot-gave-billed{
+    background: url(../billeder/KØB_KLUBKORT_NU.jpg);
+    height: 100%;
+} */
+
+/* box 2*/
+/**********************************************************************************/
+/* .arrangement1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px
+}
+.kalendertxt{
+    background-color: #fff;
+    padding: 0 15px;
+}
+.arrangement1-foto{
+    background: url(../billeder/LOUISIANE_LIVE.jpg);
+    height: 100%;
+} */
+
+
+
+.knap-menu{
+    display: grid;
+    grid-template-columns: 3fr 3fr
+}
+.knap-menu-icon{
+    margin: auto;
+    width: 21%;
+}
+
+
+
